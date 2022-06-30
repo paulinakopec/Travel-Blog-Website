@@ -1,0 +1,117 @@
+/* nav */
+
+.navbar {
+    top: 0;
+    bottom: 0;
+    max-height: 85px;
+    z-index: 99;
+}
+
+.navbarContainer {
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    width: 100vw;
+}
+
+ul.navbarMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+h1.logo {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Amatic SC', cursive;
+    margin-left: 40px;
+}
+
+li.menuItem {
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .logo {
+        z-index: 11;
+        height: 50px;
+    }
+
+    .navbarMenu {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 30vw;
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        top: 0;
+        background: white;
+        padding-left: 0;
+        transition: all 0.5s ease;
+        margin-top: 100px;
+        height: 40vh;
+    }
+
+    .show-navbarMenu {
+        opacity: 1;
+        z-index: 10;
+        transition: all 0.5s ease;
+    }
+
+    .menuItem {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    /* toggle button */
+    .navbarToggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: black;
+    }
+
+    .navbarToggle {
+        cursor: pointer;
+    }
+
+    #mobileMenu {
+        margin-right: 1rem;
+        transition: translate(5%, 20%);
+        z-index: 100;
+    }
+
+    /* toggle changing to exit symbol */
+
+    #mobileMenu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobileMenu.is-active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+    #mobileMenu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

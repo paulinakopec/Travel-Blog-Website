@@ -1,0 +1,99 @@
+/* description section */
+
+.country {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.countryImg {
+    max-width: 50%;
+}
+
+.countryDetails {
+    font: normal normal normal 16px/1.4em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif;
+    font-weight: 100;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1.countryTitle {
+    font-family: 'jaf-lapture-display', serif;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+h2.countrySubtitle {
+    font-family: 'jaf-lapture-display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.viewGalleryBtn {
+    color: black;
+    border: 1px solid black;
+    width: 230px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 40px;
+    background: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.viewGalleryBtn:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .country {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        clip-path: none;
+    }
+
+    .countryImg {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+
+    h1.countryTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .countryDetails {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+}

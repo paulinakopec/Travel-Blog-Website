@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'jaf-lapture-display', serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: rgb(48, 48, 48);
+}
+
+hr {
+    margin: 50px 20px;
+}
+
+/* footer */
+
+.footer {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer {
+    background: whitesmoke;
+}
+
+.footerTop {
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBottom {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.socialIcon {
+    margin: 0 5px;
+}
+
+.signupSpace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletterTitle {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(48, 48, 48);
+}
+
+input.newsletterInput {
+    height: 42px;
+    width: 280px;
+    border:none;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    background: whitesmoke;
+    margin-right: 30px;
+}
+
+input.newsletterInput::placeholder {
+    font-size: 15px;
+    color: gray;
+}
+
+button.newsletterBtn {
+    min-height: 20px;
+    min-width: 140px;
+    border: 1px solid rgb(48, 48, 48);
+    background: rgb(48, 48, 48);
+    cursor:pointer;
+}
+
+.newsletterBtn p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+button.newsletterBtn:hover {
+    background-color:black;
+    border: black;
+    transition: 0.5s ease-in-out;
+}
+
+.copyright {
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 150px;
+    }
+
+    .socialIcons {
+        margin: auto;
+    }
+
+    .signupSpace {
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 20px; */
+    }
+
+    input.newsletterInput {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        margin: 20px;
+        font-size: 15px;
+    }
+}
+
