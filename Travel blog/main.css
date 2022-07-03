@@ -82,22 +82,19 @@ input.newsletterInput::placeholder {
 }
 
 button.newsletterBtn {
-    min-height: 20px;
+    height: 42px;
     min-width: 140px;
-    border: 1px solid rgb(48, 48, 48);
-    background: rgb(48, 48, 48);
-    cursor:pointer;
-}
-
-.newsletterBtn p {
+    border: 1px solid black;
+    background: black;
+    cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
     color: whitesmoke;
 }
 
 button.newsletterBtn:hover {
-    background-color:black;
-    border: black;
+    background-color:rgb(48, 48, 48);
+    border: rgb(48, 48, 48);
     transition: 0.5s ease-in-out;
 }
 
@@ -140,4 +137,5 @@ button.newsletterBtn:hover {
         font-size: 15px;
     }
 }
+
 
