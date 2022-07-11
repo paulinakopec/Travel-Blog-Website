@@ -31,13 +31,15 @@ h1.logo {
 }
 
 li.menuItem {
+    font-family: 'Lato';
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 300;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-right: 40px;
     cursor: pointer;
+    color: black;
 }
 
 @media screen and (max-width: 1000px) {
