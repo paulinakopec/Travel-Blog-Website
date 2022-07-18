@@ -4,17 +4,17 @@ const menuItems = document.querySelectorAll(".menuItem");
 const countries = [
     {
         id: 1,
-        title: "Taiwan",
-        subtitle: "Taipei",
-        description: "Taiwan, officially the Republic of China (ROC), is a country in East Asia, at the junction of the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. The territories controlled by the ROC consist of 168 islands, with a combined area of 36,193 square kilometres (13,974 sq mi). The main island of Taiwan, formerly known as Formosa, has an area of 35,808 square kilometres (13,826 sq mi), with mountain ranges dominating the eastern two-thirds and plains in the western third, where its highly urbanised population is concentrated. The capital, Taipei, forms along with New Taipei City and Keelung the largest metropolitan area of Taiwan. Other major cities include Kaohsiung, Taichung, Tainan, and Taoyuan. With 23.45 million inhabitants, Taiwan is among the most densely populated countries in the world.",
-        img: "./img/taiwan1.jpg",
-    },
-    {
-        id: 2,
         title: "South Korea",
         subtitle: "Seoul",
         description: "South Korea, officially the Republic of Korea (ROK), is a country in East Asia, constituting the southern part of the Korean Peninsula and sharing a land border with North Korea. Its western border is formed by the Yellow Sea, while its eastern border is defined by the Sea of Japan. South Korea claims to be the sole legitimate government of the entire peninsula and adjacent islands. It has a population of 51.75 million, of which roughly half live in the Seoul Capital Area, the fifth largest metropolis in the world. Other major cities include Incheon, Busan, and Daegu.",
         img: "./img/korea1.jpg",
+    },
+    {
+        id: 2,
+        title: "Taiwan",
+        subtitle: "Taipei",
+        description: "Taiwan, officially the Republic of China (ROC), is a country in East Asia, at the junction of the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. The territories controlled by the ROC consist of 168 islands, with a combined area of 36,193 square kilometres (13,974 sq mi). The main island of Taiwan, formerly known as Formosa, has an area of 35,808 square kilometres (13,826 sq mi), with mountain ranges dominating the eastern two-thirds and plains in the western third, where its highly urbanised population is concentrated. The capital, Taipei, forms along with New Taipei City and Keelung the largest metropolitan area of Taiwan. Other major cities include Kaohsiung, Taichung, Tainan, and Taoyuan. With 23.45 million inhabitants, Taiwan is among the most densely populated countries in the world.",
+        img: "./img/taiwan1.jpg",
     },
     {
         id: 3,
@@ -42,21 +42,21 @@ const countries = [
 const gallery = [
     {
         id: 1,
-        img1: "./img/tw1.jpg",
-        img2: "./img/tw2.jpg",
-        img3: "./img/tw3.jpg",
-        img4: "./img/tw4.jpg",
-        img5: "./img/tw5.jpg",
-        img6: "./img/tw6.jpg",
-    },
-    {
-        id: 2,
         img1: "./img/sk1.jpg",
         img2: "./img/sk2.jpg",
         img3: "./img/sk3.jpg",
         img4: "./img/sk4.jpg",
         img5: "./img/sk5.jpg",
         img6: "./img/sk6.jpg",
+    },
+    {
+        id: 2,
+        img1: "./img/tw1.jpg",
+        img2: "./img/tw2.jpg",
+        img3: "./img/tw3.jpg",
+        img4: "./img/tw4.jpg",
+        img5: "./img/tw5.jpg",
+        img6: "./img/tw6.jpg",
     },
     {
         id: 3,
